@@ -5,6 +5,8 @@ from pathlib import Path
 import uuid
 import time
 
+
+# 関数の定義
 def image_scraping(output_folder, url):
     Path(output_folder).mkdir(exist_ok=True)
 
@@ -23,6 +25,6 @@ def image_scraping(output_folder, url):
             file.write(image_data.content)
         
 
-
-# image_scraping('出力先フォルダ', 'URL')
+# 関数の実行
+# image_scraping('出力先フォルダ', '画像を取得したいサイトのURL')
 image_scraping()
